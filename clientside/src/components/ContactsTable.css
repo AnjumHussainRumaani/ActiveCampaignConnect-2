@@ -1,0 +1,72 @@
+.contactTableBlock{
+  min-height: 100vh;
+  margin: 20px 0px;
+}
+.tableCard {
+  max-width: 800px;
+  width: 95%;
+  margin: 20px auto;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid black;
+  /* border-radius: 12px; */
+  padding: 20px;
+}
+.tableCard:hover{
+  box-shadow: 4px 4px 10px black;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  margin: 0px 0px 15px 0px;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 33%); /* Three columns by default */
+  grid-gap: 10px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+  padding: 16px;
+  /* background-color: #fdfdfd; */
+  /* border-radius: 10px; */
+  background-color: white;
+  color: #000;
+}
+.grid-item:hover{
+  box-shadow: 4px 4px 10px black;
+}
+
+.grid-item span{
+  font-weight: 700
+}
+
+.backButton{
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Media query for tablet view (768px and below) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablet view */
+  }
+  .backButton{
+    display: flex;
+    justify-content: center;
+  }
+  .contactTableBlock{
+    margin: 10px;
+  }
+}
+
+/* Media query for mobile view (480px and below) */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* One column for mobile view */
+  }
+}

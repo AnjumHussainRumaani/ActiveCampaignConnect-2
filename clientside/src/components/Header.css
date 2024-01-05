@@ -1,0 +1,96 @@
+.headerBlock{
+  padding: 5px;
+  background: #1c5792;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+}
+.img-div{
+    display: flex;
+    align-items: center;
+}
+.btn-div{
+  display: flex;
+  gap: 10px;
+}
+
+.btn-div a{
+  font-weight: 600;
+  font-size: medium;
+  /* text-decoration: 2px underline; */
+  cursor: pointer;
+  color: white;
+}
+
+.btn-div a:link{
+  color: white;
+}
+.btn-div a:visited{
+  color: #e95f6a;
+}
+.btn-div a:hover{
+  color: #e95f6a;
+  font-size: large;
+}
+
+.mcom-image{
+    width: 43px;
+    height: 63px;
+  }
+.ac-image{
+    width: 56px;
+    height: 52px;
+}
+.burger-sign{
+  rotate: 90deg;
+  font-size: large;
+}
+
+.dropdown {
+  display: none;
+}
+  @media (max-width: 768px){
+    .dropdown {
+      padding: 10px;
+      position: relative;
+      display: inline-block;
+      transform: scaleX(-1);
+    }
+    .btn-div{
+      display: none;
+    }
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: scaleX(-1);
+    cursor: pointer;
+  }
+  .dropdown-content a:hover{
+    color: #e95f6a;
+    font-size: medium;
+    background-color: black;
+    font-weight: bold;
+    padding: 2px;
+  }
